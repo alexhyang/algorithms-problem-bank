@@ -2,7 +2,7 @@
   "name": "leetcode-practice",
   "dependencies": {},
   "devDependencies": {
-    "jest": "^27.3.1"
+    "jest": "^29.6.3"
   },
   "scripts": {
     "test": "jest"
