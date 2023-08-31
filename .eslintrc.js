@@ -19,6 +19,14 @@ module.exports = {
     ecmaVersion: "latest",
   },
   plugins: ["@typescript-eslint"],
-  rules: {},
+  rules: {
+    // jest rules
+    'jest/no-disabled-tests': 'warn',
+    'jest/no-focused-tests': 'error',
+    'jest/no-identical-title': 'error',
+    'jest/prefer-to-have-length': 'warn',
+    'jest/valide-expect': 'error',
+
+  },
   include: ["src/**/*.ts", "src/**/*.js"],
 };
