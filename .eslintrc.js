@@ -1,32 +1,33 @@
 module.exports = {
   env: {
     browser: true,
-    commonjs: true,
     es2021: true,
   },
   extends: [
     "eslint:recommended",
-    "airbnb",
+    "airbnb-base",
     "airbnb-typescript/base",
     "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
   ],
-  parserOptions: {
-    project: "./tsconfig.json",
-  },
+  ignorePatterns: [
+    '.eslintrc.js',
+    'src/Algorithm',
+  ],
   overrides: [],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
+    project: "./tsconfig.json",
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "jest"],
   rules: {
     // jest rules
     'jest/no-disabled-tests': 'warn',
     'jest/no-focused-tests': 'error',
     'jest/no-identical-title': 'error',
     'jest/prefer-to-have-length': 'warn',
-    'jest/valide-expect': 'error',
-
+    'jest/valid-expect': 'error',
   },
-  include: ["src/**/*.ts", "src/**/*.js"],
 };
