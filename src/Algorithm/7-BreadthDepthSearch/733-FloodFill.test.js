@@ -1,6 +1,6 @@
-const { floodFill } = require("./733-FloodFill");
+const { floodFill } = require('./733-FloodFill');
 
-test("image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, newColor = 2", () => {
+test('image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, newColor = 2', () => {
   let image = [
     [0, 0, 0],
     [0, 0, 0],
@@ -14,7 +14,7 @@ test("image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, newColor = 2", () => {
   ]);
 });
 
-test("image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, newColor = 2", () => {
+test('image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, newColor = 2', () => {
   let image = [
     [1, 1, 1],
     [1, 1, 0],

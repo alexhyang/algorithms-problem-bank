@@ -1,5 +1,5 @@
-const { ListNode, getLength } = require("./19-RemoveNthNode");
-const { middleNode } = require("./876-MiddleOfTheLinkedList");
+const { ListNode, getLength } = require('./19-RemoveNthNode');
+const { middleNode } = require('./876-MiddleOfTheLinkedList');
 
 // head = node1
 // node1 -> node2 -> node3 -> node4 -> node5 -> null
@@ -17,11 +17,11 @@ node5.next = null;
 
 // test helper functions
 // test getLength()
-test("head = [1, 2, 3, 4, 5]", () => {
+test('head = [1, 2, 3, 4, 5]', () => {
   expect(middleNode(node1)).toEqual(node3);
 });
 
-test("head = [1, 2, 3, 4, 5, 6]", () => {
+test('head = [1, 2, 3, 4, 5, 6]', () => {
   let node6 = new ListNode(6);
   node5.next = node6;
   node6.next = null;

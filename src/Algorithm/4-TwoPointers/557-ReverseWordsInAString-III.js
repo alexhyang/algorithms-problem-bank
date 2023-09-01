@@ -8,9 +8,9 @@ while still preserving whitespace and initial word order.
  */
 var reverseWords = function (s) {
   return s
-    .split(" ")
-    .map((w) => w.split("").reverse().join(""))
-    .join(" ");
+    .split(' ')
+    .map((w) => w.split('').reverse().join(''))
+    .join(' ');
 };
 
 exports.reverseWords = reverseWords;

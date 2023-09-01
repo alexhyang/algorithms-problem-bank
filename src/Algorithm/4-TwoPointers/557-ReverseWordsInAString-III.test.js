@@ -1,4 +1,4 @@
-const { reverseWords } = require("./557-ReverseWordsInAString-III");
+const { reverseWords } = require('./557-ReverseWordsInAString-III');
 
 test('s = "Let\'s take LeetCode contest"', () => {
   let s = "Let's take LeetCode contest";
