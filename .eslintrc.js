@@ -10,6 +10,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
     "plugin:jest/style",
+    "prettier",
   ],
   ignorePatterns: [
     '.eslintrc.js',
