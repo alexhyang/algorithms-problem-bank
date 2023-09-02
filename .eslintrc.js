@@ -12,7 +12,7 @@ module.exports = {
     'plugin:jest/style',
     'prettier',
   ],
-  ignorePatterns: ['.eslintrc.js', 'src/Algorithm'],
+  ignorePatterns: ['.eslintrc.js', 'jest.config.js', 'src/Algorithm'],
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
