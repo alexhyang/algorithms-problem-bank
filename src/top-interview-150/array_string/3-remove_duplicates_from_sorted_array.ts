@@ -13,8 +13,11 @@
  *    unique elements in the order they were present in nums initially. The
  *    remaining elements of nums are not important as well as the size of nums.
  *  - Return k.
-
  *
+ * Constraints:
+ * -  1 <= nums.length <= 3 * 104
+ * -  -100 <= nums[i] <= 100
+ * -  nums is sorted in non-decreasing order
 */
 
 /*  Test Cases:
@@ -26,7 +29,7 @@
  *      nums = [3] => 1, nums = [3]
  *
  *  3. only one unique value in nums:
- *      nums = [3,3,3] => 1, nums = [3,3,3]
+ *      nums = [3,3,3] => 1, nums = [3,_,_]
  *
  *  4. no duplicates:
  *      nums = [1,2,3] => 3, nums = [1,2,3]
