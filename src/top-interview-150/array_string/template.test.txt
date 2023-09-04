@@ -1,0 +1,19 @@
+import functionName from './problemFileName';
+
+describe('test functionName()', () => {
+  it('corner case: _______________', () => {
+    const nums = [3];
+    const expected = 1;
+    const output = functionName(nums);
+    expect(output).toBe(expected);
+  });
+
+  describe('general case: ______________________________________', () => {
+    it('case1', () => {
+      const nums = [1,1,2];
+      const expected = 2;
+      const output = functionName(nums);
+      expect(output).toBe(expected);
+    });
+  });
+});
