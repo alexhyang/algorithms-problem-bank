@@ -1,6 +1,6 @@
 import removeElement from './2-remove_element';
 
-describe('test merge()', () => {
+describe('test removeElement()', () => {
   it('empty nums', () => {
     const nums:number[] = [];
     const val = 5;
