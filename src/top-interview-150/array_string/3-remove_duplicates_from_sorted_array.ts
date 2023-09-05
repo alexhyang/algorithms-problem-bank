@@ -49,15 +49,13 @@
  Do not return anything, modify nums1 in-place instead.
  */
 function removeDuplicates(nums: number[]): number {
-  let i = 0;
   let k = 0;
   let current = -999;
-  while (i < nums.length) {
+  for (let i = 0; i < nums.length; i++) {
     if (nums[i] !== current) {
       current = nums[i];
       nums[k++] = nums[i];
     }
-    i++;
   }
   return k;
 }

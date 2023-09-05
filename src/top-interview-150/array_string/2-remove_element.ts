@@ -45,11 +45,9 @@
  Do not return anything, modify nums1 in-place instead.
  */
 function removeElement(nums: number[], val: number): number {
-  let i = 0;
   let k = 0;
-  while (i < nums.length) {
+  for (let i = 0; i < nums.length; i++) {
     if (nums[i] !== val) nums[k++] = nums[i];
-    i++;
   }
   return k;
 }

@@ -53,18 +53,10 @@
  Do not return anything, modify nums1 in-place instead.
  */
 function removeDuplicates(nums: number[]): number {
-  let i = 0;
   let k = 0;
   let counter = 0;
   let current = -99999;
-  while (i < nums.length) {
-    // if val !== current, update nums[k], k++, counter = 1
-    // if val === current, check counter,
-    //    if counter < 2, update nums[k], k++, counter++
-    //    else do nothing
-    // update nums[k] when
-    //  1) val !== current
-    //  2) val === current and counter < 2
+  for (let i = 0; i < nums.length; i++) {
     if (nums[i] !== current) {
       current = nums[i];
       nums[k++] = nums[i];
@@ -75,7 +67,6 @@ function removeDuplicates(nums: number[]): number {
         counter++;
       }
     }
-    i++;
   }
   return k;
 }
