@@ -1,7 +1,8 @@
 /*
  * 80. Remove Duplicates from Sorted Array II
  * (https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
- * ------
+ *
+ * ============
  *  Given an integer array nums sorted in non-decreasing order, remove the
  *  duplicates in-place such that each unique element appears at most twice.
  *  The relative order of the elements should be kept the same.
@@ -17,14 +18,14 @@
  *  Do not allocate extra space for another array. You must do this by
  *  modifying the input array in-place with O(1) extra memory.
  *
+ * ============
  * Constraints:
  * -  1 <= nums.length <= 3 * 10^4
  * -  -10^4 <= nums[i] <= 10^4
  * -  nums is sorted in non-decreasing order.
  *
-*/
-
-/*  Test Cases:
+ * ============
+ *  Test Cases:
  *  1. general:
  *      nums = [1,1,1,2,2,3] => 2, nums = [1,1,2,2,3,_]
  *      nums = [0,0,1,1,1,1,2,3,3] => 7, nums = [0,0,1,1,2,3,3,_,_]
@@ -37,21 +38,8 @@
  *
  *  4. no duplicates:
  *      nums = [1,2,3] => 3, nums = [1,2,3]
- *
- */
+*/
 
-/*
- *  if (nums.length === 1) { return 1 }
- *  if (val > 50) { return nums.length }
- *  if (n !== 0 && m !== 0) {
- *    merge nums1 & nums2 from max to min
- *  }
- */
-
-
-/**
- Do not return anything, modify nums1 in-place instead.
- */
 function removeDuplicates(nums: number[]): number {
   let k = 0;
   let counter = 0;

@@ -1,6 +1,8 @@
 /*
- * 88. Merge Sorted Array (https://leetcode.com/problems/merge-sorted-array/)
- * ------
+ * 88. Merge Sorted Array
+ * (https://leetcode.com/problems/merge-sorted-array/)
+ *
+ * ============
  * You are given two integer arrays nums1 and nums2, sorted in non-decreasing
  * order, and two integers m and n, representing the number of elements in
  * nums1 and nums2 respectively.
@@ -13,9 +15,8 @@
  * merged, and the last n elements are set to 0 and should be ignored. nums2
  * has a length of n.
  *
-*/
-
-/*  Test Cases:
+ * ============
+ * Test Cases:
  *  1. general:
  *      [1,2,3,0,0,0] + [2,5,6] = [1,2,2,3,5,6]
  *      [1,2,3,0,0] + [2,5] = [1,2,2,3,5]
@@ -29,15 +30,16 @@
  *  4. num1.length = num2.length = 1:
  *      [1, 0] + [2] = [1,2]
  *
- */
+*/
 
-/*  if (n = 0) { do nothing }
+/* ============
+ * Thougts:
+ *  if (n = 0) { do nothing }
  *  if (n !== 0 && m == 0) { nums1 = nums2 }
  *  if (n !== 0 && m !== 0) {
  *    merge nums1 & nums2 from max to min
  *  }
  */
-
 
 /**
  Do not return anything, modify nums1 in-place instead.
