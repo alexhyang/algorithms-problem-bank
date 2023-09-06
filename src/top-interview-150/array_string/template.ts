@@ -29,13 +29,9 @@
  *      nums = [1,1,2] => 2, nums = [1,2,_]
  *      nums = [0,0,1,1,1,2,2,3,3,4] => 5, nums = [0,1,2,3,4,_,_,_,_,_]
  *
- *  2. nums.length = 1:
+ *  2. corner:
  *      nums = [3] => 1, nums = [3]
- *
- *  3. only one unique value in nums:
  *      nums = [3,3,3] => 1, nums = [3,_,_]
- *
- *  4. no duplicates:
  *      nums = [1,2,3] => 3, nums = [1,2,3]
 */
 
