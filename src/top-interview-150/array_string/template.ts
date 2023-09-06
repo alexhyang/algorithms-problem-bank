@@ -19,7 +19,7 @@
  *
  * ============
  * Constraints:
- * -  1 <= nums.length <= 3 * 104
+ * -  1 <= nums.length <= 3E+04
  * -  -100 <= nums[i] <= 100
  * -  nums is sorted in non-decreasing order
  *

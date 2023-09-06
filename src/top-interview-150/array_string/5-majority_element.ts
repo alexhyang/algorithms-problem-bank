@@ -12,8 +12,8 @@
  * ============
  * Constraints:
  * -  n == nums.length
- * -  1 <= n <= 5E+4
- * -  -1E+9 <= nums[i] <= 1E+9
+ * -  1 <= n <= 5E+04
+ * -  -1E+09 <= nums[i] <= 1E+09
  *
  * ============
  * Test Cases:
