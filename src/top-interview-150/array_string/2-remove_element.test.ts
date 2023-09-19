@@ -2,7 +2,7 @@ import removeElement from './2-remove_element';
 
 describe('test removeElement()', () => {
   it('empty nums', () => {
-    const nums:number[] = [];
+    const nums: number[] = [];
     const val = 5;
 
     const expected = 0;
@@ -29,7 +29,7 @@ describe('test removeElement()', () => {
   });
 
   it('val out of range (val > 50)', () => {
-    const nums = [3,3,3,3];
+    const nums = [3, 3, 3, 3];
     const val = 52;
 
     const expected = 4;
@@ -38,7 +38,7 @@ describe('test removeElement()', () => {
   });
 
   it('all elements in nums are val', () => {
-    const nums = [3,3,3,3];
+    const nums = [3, 3, 3, 3];
     const val = 3;
 
     const expected = 0;
@@ -47,7 +47,7 @@ describe('test removeElement()', () => {
   });
 
   it('no elements in nums are val', () => {
-    const nums = [3,3,3,3];
+    const nums = [3, 3, 3, 3];
     const val = 5;
 
     const expected = 4;
@@ -56,7 +56,7 @@ describe('test removeElement()', () => {
   });
 
   it('general case 1', () => {
-    const nums = [3,2,2,3];
+    const nums = [3, 2, 2, 3];
     const val = 3;
 
     const expected = 2;
@@ -65,12 +65,11 @@ describe('test removeElement()', () => {
   });
 
   it('general case 2', () => {
-    const nums = [0,1,2,2,3,0,4,2];
+    const nums = [0, 1, 2, 2, 3, 0, 4, 2];
     const val = 2;
 
     const expected = 5;
     const output = removeElement(nums, val);
     expect(output).toBe(expected);
   });
-
 });

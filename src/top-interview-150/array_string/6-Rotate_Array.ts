@@ -29,7 +29,7 @@
  *      nums = [3], k = 4 => [3] // nums.length = 1, k > nums.length
  *
  *
-*/
+ */
 
 function rotate(nums: number[], k: number): number[] {
   k = k % nums.length;

@@ -38,7 +38,7 @@
  *
  *  4. no duplicates:
  *      nums = [1,2,3] => 3, nums = [1,2,3]
-*/
+ */
 
 function removeDuplicates(nums: number[]): number {
   let k = 0;

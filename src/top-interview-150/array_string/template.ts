@@ -33,7 +33,7 @@
  *      nums = [3] => 1, nums = [3]
  *      nums = [3,3,3] => 1, nums = [3,_,_]
  *      nums = [1,2,3] => 3, nums = [1,2,3]
-*/
+ */
 
 function removeDuplicates(nums: number[]): number {
   let k = 0;

@@ -9,14 +9,14 @@ describe('test removeDuplicates()', () => {
   });
 
   it('general case: one unique value in nums', () => {
-    const nums = [3,3,3,3,3,3,3,3];
+    const nums = [3, 3, 3, 3, 3, 3, 3, 3];
     const expected = 1;
     const output = removeDuplicates(nums);
     expect(output).toBe(expected);
   });
 
   it('general case: no duplicates', () => {
-    const nums = [1,2,3,4,5];
+    const nums = [1, 2, 3, 4, 5];
     const expected = 5;
     const output = removeDuplicates(nums);
     expect(output).toBe(expected);
@@ -24,14 +24,14 @@ describe('test removeDuplicates()', () => {
 
   describe('general case: multiple unique values with duplicates', () => {
     it('case1', () => {
-      const nums = [1,1,2];
+      const nums = [1, 1, 2];
       const expected = 2;
       const output = removeDuplicates(nums);
       expect(output).toBe(expected);
     });
 
     it('case2', () => {
-      const nums = [0,0,1,1,1,2,2,3,3,4];
+      const nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
       const expected = 5;
       const output = removeDuplicates(nums);
       expect(output).toBe(expected);

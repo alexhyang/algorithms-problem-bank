@@ -31,7 +31,7 @@
  *
  *  5. val out of range of nums[i] (val > 50)
  *      nums = [3,3,3,3], val = 51 => 4, nums = [3,3,3,3]
-*/
+ */
 
 function removeElement(nums: number[], val: number): number {
   let k = 0;

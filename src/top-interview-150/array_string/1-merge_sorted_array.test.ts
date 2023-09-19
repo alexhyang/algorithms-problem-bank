@@ -26,7 +26,7 @@ describe('test merge()', () => {
   it('empty nums2', () => {
     const nums1 = [3, 5, 6];
     const m = 3;
-    const nums2:number[] = [];
+    const nums2: number[] = [];
     const n = 0;
 
     const expected = [3, 5, 6];

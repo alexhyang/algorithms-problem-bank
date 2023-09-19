@@ -10,7 +10,7 @@ describe('test removeDuplicates()', () => {
 
   describe('general case', () => {
     it('case1', () => {
-      const nums = [1,1,2];
+      const nums = [1, 1, 2];
       const expected = 3;
       const output = removeDuplicates(nums);
       expect(output).toBe(expected);
