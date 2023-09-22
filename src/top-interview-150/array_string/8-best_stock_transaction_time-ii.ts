@@ -44,25 +44,13 @@
  */
 
 function maxProfit(prices: number[]): number{
-  let totalProfit = 0;
-  let currentMaxProfit = 0;
-  let min = prices[0];
-  for (let i = 0; i < prices.length; i++) {
-    min = Math.min(min, prices[i]);
-    const currentProfit = prices[i] - min;
-
-    if (currentProfit > currentMaxProfit) {
-      currentMaxProfit = currentProfit;
-      if (i === prices.length - 1) {
-        totalProfit += currentMaxProfit;
-      }
-    } else {
-      totalProfit += currentMaxProfit;
-      min = prices[i];
-      currentMaxProfit = 0;
-    }
+  let profit = 0;
+  let currentProfit = 0;
+  for (let i = 0; i < prices.length - 1; i++) {
+    currentProfit = prices[i + 1] - prices[i];
+    profit += (currentProfit > 0) ? currentProfit : 0;
   }
-  return totalProfit;
+  return profit;
 }
 
 export default maxProfit;
