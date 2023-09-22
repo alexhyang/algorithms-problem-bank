@@ -1,3 +1,3 @@
 # Leetcode-practice
-
-[Algorithm Study Plan](https://leetcode.com/study-plan/algorithm/)
+*   [current study plan](https://leetcode.com/studyplan/)
+*   [top interview 150](https://leetcode.com/studyplan/top-interview-150/)
