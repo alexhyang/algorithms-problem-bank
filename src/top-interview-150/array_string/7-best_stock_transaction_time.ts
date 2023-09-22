@@ -35,15 +35,21 @@
  *      prices = [7,6,5,4,3,2,1] ==> profit = 0 (decreasing prices)
  */
 
+/* method:
+ *  cache the start of current window (minimum value)
+ *  cache the current maximum profit
+ *  update when pointer moves to the right
+ *
+ */
+
 function maxProfit(prices: number[]): number{
-  let max = 0;
+  let profit = 0;
+  let min = Infinity;
   for (let i = 0; i < prices.length; i++) {
-    for (let j = i; j < prices.length; j++) {
-      let diff = prices[j] - prices[i];
-      max = diff > max ? diff : max;
-    }
+    min = Math.min(min, prices[i]);
+    profit = Math.max(profit, prices[i] - min);
   }
-  return max;
+  return profit;
 }
 
 export default maxProfit;
